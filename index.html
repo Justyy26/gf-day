@@ -1,173 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Girlfriend Day</title>
+  <meta charset="UTF-8">
+  <title>Happy Girlfriend's Day!</title>
   <style>
     body {
-      margin: 0;
+      background: #ffe6f0;
       font-family: 'Segoe UI', sans-serif;
-      background: #fff0f5;
-      color: #333;
-      overflow-x: hidden;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
       text-align: center;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 20px;
+      color: #ff5e99;
     }
 
     h1 {
-      color: #ff69b4;
-      font-size: 2.4em;
-      margin-bottom: 15px;
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      white-space: pre-line;
+    .letter {
+      background: #fff0f5;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
     }
 
-    .gallery {
-      margin-top: 30px;
+    .photo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
-      animation: fadeIn 2.5s ease-in-out;
+      max-width: 800px;
+      margin: auto;
     }
 
-    .gallery img {
+    .photo-grid img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      border-radius: 15px;
+      border: 3px solid #ffc0cb;
+      transition: transform 0.3s;
     }
 
-    .gallery img:hover {
-      transform: scale(1.03);
+    .photo-grid img:hover {
+      transform: scale(1.05);
     }
 
-    .footer {
+    footer {
       margin-top: 40px;
-      font-style: italic;
-      color: #ff69b4;
-      font-size: 0.95em;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Floating hearts */
-    .heart {
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      background: #ff69b4;
-      transform: rotate(45deg);
-      animation: floatUp 10s linear infinite;
-      z-index: 0;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: #ff69b4;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -10px;
-      left: 0;
-    }
-
-    .heart::after {
-      left: -10px;
-      top: 0;
-    }
-
-    @keyframes floatUp {
-      0% {
-        transform: translateY(100vh) scale(0.8) rotate(45deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-10vh) scale(1.2) rotate(45deg);
-        opacity: 0;
-      }
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
+  <h1>Happy Girlfriend's Day! 💖</h1>
 
-  <!-- Floating hearts container -->
-  <script>
-    for (let i = 0; i < 20; i++) {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDelay = Math.random() * 10 + 's';
-      heart.style.opacity = Math.random();
-      document.body.appendChild(heart);
-    }
-  </script>
-
-  <div class="container">
-    <h1>Hi bub bubb 💕</h1>
-    <p>
-Happy Girlfriend's Day!  
-i didn't know na gf day pala ngayon HAHAHAHSHWHWA  
-i made this on a rush, i hope you appreciate it!  
-  
-i really wanna say that  
-i love you so muchh and i will always love you palagi  
-and never ever kita susukuan like i promised from the start.  
-  
-I hope I still always make you feel loved like I've always do before.  
-You always make me feel loved everyday  
-and I’m so grateful thta you're my partner for life.  
-  
-halos half a year na nyan tayo magkasama hehe  
-i love youu!
+  <div class="letter">
+    <p>Hi bub bubb, Happy Girlfriend's Day!<br><br>
+    i didn't know na gf day pala ngayon HAHAHAHSHWHWA i made this on a rush i hope you appreciate it 😭 i really wanna say that i love you so muchh and i will always love you palagi and never ever kita susukuan like i promised from the start. I hope i still always make you feel loved like I've always do before. You always make me feel loved everyday and im so grateful thta you're my partner for life. halos half a year na nyan tayo magkasama hehe i love youu!
     </p>
-
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x400?text=Pic+1" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+2" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+3" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+4" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+5" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+6" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+7" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+8" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+9" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+10" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+11" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+12" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+13" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+14" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+15" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+16" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+17" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+18" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+19" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+20" />
-      <img src="https://via.placeholder.com/300x400?text=Pic+21" />
-    </div>
-
-    <div class="footer">
-      Made with love, by your hubby Justyy 🩷
-    </div>
   </div>
+
+  <div class="photo-grid">
+    <img src="assets/pic1.jpg" alt="photo 1">
+    <img src="assets/pic2.jpg" alt="photo 2">
+    <img src="assets/pic3.jpg" alt="photo 3">
+    <img src="assets/pic4.jpg" alt="photo 4">
+    <img src="assets/pic5.jpg" alt="photo 5">
+    <img src="assets/pic6.jpg" alt="photo 6">
+    <img src="assets/pic7.jpg" alt="photo 7">
+    <img src="assets/pic8.jpg" alt="photo 8">
+  </div>
+
+  <footer>
+    I love you always 💗 — Your Hubby Justyy
+  </footer>
 </body>
 </html>
