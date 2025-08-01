@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Girlfriend's Day!</title>
+  <title>Happy GF Day 💖</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
       background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
       overflow-x: hidden;
     }
 
     h1 {
       text-align: center;
-      color: #ff3399;
+      color: #ff69b4;
       margin-top: 20px;
     }
 
     .letter {
-      font-family: "Times New Roman", serif;
-      margin: 30px auto;
-      padding: 20px;
-      background: #fff0f5;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(255, 153, 204, 0.5);
-      line-height: 1.6;
+      text-align: center;
+      font-family: 'Times New Roman', serif;
+      font-size: 18px;
+      margin: 30px 20px;
+      color: #444;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
       padding: 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -43,83 +40,95 @@
       width: 100%;
       border-radius: 12px;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
       transform: scale(1.05);
     }
 
-    /* Floating Hearts */
-    .heart {
-      width: 20px;
-      height: 20px;
+    .enlarged {
       position: fixed;
-      animation: floatUp 2s ease-out forwards;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90%;
+      max-height: 90%;
+      z-index: 10;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
-    .heart::before, .heart::after {
-      content: "";
-      width: 20px;
-      height: 20px;
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 9;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 16px;
+      color: #ff69b4;
+    }
+
+    .heart {
+      position: fixed;
+      width: 15px;
+      height: 15px;
       background: pink;
+      transform: rotate(45deg);
+      animation: float 1s ease-out forwards;
+      z-index: 9999;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
       position: absolute;
+      width: 15px;
+      height: 15px;
+      background: pink;
       border-radius: 50%;
     }
 
     .heart::before {
-      top: 0;
-      left: 10px;
+      top: -7.5px;
+      left: 0;
     }
 
     .heart::after {
-      top: 10px;
-      left: 0;
-    }
-
-    @keyframes floatUp {
-      0% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-200px) scale(1.5);
-      }
-    }
-
-    /* Lightbox */
-    .lightbox {
-      display: none;
-      position: fixed;
-      z-index: 99;
+      left: -7.5px;
       top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      align-items: center;
-      justify-content: center;
     }
 
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 12px;
+    @keyframes float {
+      100% {
+        transform: translateY(-100px) scale(0.3) rotate(45deg);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Happy Girlfriend's Day!</h1>
+<h1>Happy Girlfriend's Day! 💖</h1>
 
-  <div class="letter">
-    Hi bub bubb, Happy Girlfriend's Day!<br><br>
-    I didn't know na gf day pala ngayon HAHAHAHSHWHWA 😭 I made this on a rush, I hope you appreciate it. I really wanna say that I love you so muchh and I will always love you palagi and never ever kita susukuan like I promised from the start. I hope I still always make you feel loved like I've always do before. You always make me feel loved everyday and I'm so grateful that you're my partner for life. Halos half a year na nyan tayo magkasama hehe. I love youu!
-  </div>
+<div class="letter">
+  Hi bub bubb, Happy Girlfriend's Day!<br><br>
+  I didn't know na gf day pala ngayon HAHAHAHSHWHWA I made this on a rush, I hope you appreciate it.<br>
+  I really wanna say that I love you so muchh and I will always love you palagi and never ever kita susukuan like I promised from the start.<br>
+  I hope I still always make you feel loved like I've always do before.<br>
+  You always make me feel loved everyday and I'm so grateful that you're my partner for life.<br>
+  Halos half a year na nyan tayo magkasama hehe. I love youu!
+</div>
 
-  <div class="gallery">
-    <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic1.jpeg" alt="1">
+<div class="gallery">
+  <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic1.jpeg" alt="1">
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic2.jpeg" alt="2">
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic3.jpeg" alt="3">
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic4.jpeg" alt="4">
@@ -127,42 +136,42 @@
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic6.jpeg" alt="6">
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic7.jpeg" alt="7">
     <img src="https://raw.githubusercontent.com/Justyy26/gf-day/refs/heads/main/pic8.jpeg" alt="8">
-  </div>
+</div>
 
-  <div class="lightbox" id="lightbox">
-    <img src="" id="lightbox-img">
-  </div>
+<div class="footer">Made by your hubby Justyy 💗</div>
 
-  <script>
-    // Floating hearts
-    function createHeart() {
+<script>
+  // Click to enlarge image
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+      overlay.addEventListener('click', () => {
+        document.body.removeChild(overlay);
+        document.body.removeChild(enlarged);
+      });
+
+      const enlarged = document.createElement('img');
+      enlarged.src = img.src;
+      enlarged.className = 'enlarged';
+
+      document.body.appendChild(overlay);
+      document.body.appendChild(enlarged);
+    });
+  });
+
+  // Floating hearts on click
+  document.body.addEventListener('click', function(e) {
+    for (let i = 0; i < 10; i++) {
       const heart = document.createElement("div");
       heart.className = "heart";
-      heart.style.left = Math.random() * 100 + "vw";
-      heart.style.top = Math.random() * 100 + "vh";
-      heart.style.background = `hsl(${Math.random() * 360}, 100%, 80%)`;
+      heart.style.left = (e.clientX + Math.random() * 40 - 20) + "px";
+      heart.style.top = (e.clientY + Math.random() * 40 - 20) + "px";
       document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 2000);
+      setTimeout(() => heart.remove(), 1000);
     }
-
-    setInterval(createHeart, 300);
-
-    // Lightbox for images
-    const galleryImages = document.querySelectorAll(".gallery img");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    galleryImages.forEach(img => {
-      img.addEventListener("click", () => {
-        lightbox.style.display = "flex";
-        lightboxImg.src = img.src;
-      });
-    });
-
-    lightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
-    });
-  </script>
+  });
+</script>
 
 </body>
 </html>
